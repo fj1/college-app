@@ -5,6 +5,7 @@
   "dependencies": {
     "eslint-config-airbnb": "^15.1.0",
     "material-ui": "^0.19.2",
+    "md5": "^2.2.1",
     "prettier": "^1.7.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
