@@ -64,6 +64,7 @@ class App extends Component {
               })}
                 </GridList>
               </div>
+              <div>Data provided by Marvel. © 2014 Marvel</div>
           </div>
         </MuiThemeProvider>
     );
