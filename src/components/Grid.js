@@ -19,8 +19,6 @@ class Grid extends Component {
         justifyContent: "space-around"
       },
       gridList: {
-        width: 500,
-        height: 450,
         overflowY: "auto"
       }
     };
