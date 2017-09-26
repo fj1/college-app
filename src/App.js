@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import AppBar from "material-ui/AppBar";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import { GridList, GridTile } from "material-ui/GridList";
+import {BottomNavigation, BottomNavigationItem} from 'material-ui/BottomNavigation';
+import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 
 import "./App.css";
 import utils from "./utils.js";
@@ -13,7 +15,6 @@ class App extends Component {
     const publicKey = utils.getPublicKey();
     const hash = utils.generateHash(timestamp);
     const getCharacterURL = `${characterURL}?ts=${timestamp}&apikey=${publicKey}&hash=${hash}`;
-    console.log(getCharacterURL);
     const response = await fetch(getCharacterURL, {
       method: "GET",
       headers: { accept: "application/json" }
@@ -62,7 +63,18 @@ class App extends Component {
                 })}
             </GridList>
           </div>
-          <div>Data provided by Marvel. © 2014 Marvel</div>
+          <BottomNavigation>
+            <BottomNavigationItem
+              label="Data provided by Marvel. © 2014 Marvel"
+              icon={<StarBorder color="black" />}
+              href="https://developer.marvel.com"
+            />
+            <BottomNavigationItem
+              label="Github"
+              icon={<StarBorder color="black" />}
+              href="https://github.com/fj1/college-app"
+            />
+          </BottomNavigation>
         </div>
       </MuiThemeProvider>
     );
