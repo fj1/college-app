@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import AppBar from "material-ui/AppBar";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import { GridList, GridTile } from "material-ui/GridList";
-import {BottomNavigation, BottomNavigationItem} from 'material-ui/BottomNavigation';
-import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 
 import "./App.css";
+import Footer from './components/Footer.js'
 import utils from "./utils.js";
 
 class App extends Component {
@@ -63,18 +62,7 @@ class App extends Component {
                 })}
             </GridList>
           </div>
-          <BottomNavigation>
-            <BottomNavigationItem
-              label="Data provided by Marvel. © 2014 Marvel"
-              icon={<StarBorder color="black" />}
-              href="https://developer.marvel.com"
-            />
-            <BottomNavigationItem
-              label="Github"
-              icon={<StarBorder color="black" />}
-              href="https://github.com/fj1/college-app"
-            />
-          </BottomNavigation>
+          <Footer />
         </div>
       </MuiThemeProvider>
     );
