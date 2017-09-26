@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import AppBar from "material-ui/AppBar";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
-import "./App.css";
 import Footer from './components/Footer.js'
 import Grid from './components/Grid.js'
 import utils from "./utils.js";
