@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import AppBar from "material-ui/AppBar";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import { GridList, GridTile } from "material-ui/GridList";
 
 import "./App.css";
 import Footer from './components/Footer.js'
+import Grid from './components/Grid.js'
 import utils from "./utils.js";
 
 class App extends Component {
@@ -31,37 +31,13 @@ class App extends Component {
   };
 
   render() {
-    this.styles = {
-      root: {
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "space-around"
-      },
-      gridList: {
-        width: 500,
-        height: 450,
-        overflowY: "auto"
-      }
-    };
     return (
       <MuiThemeProvider>
         <div className="App">
           <AppBar title="Marvel App" />
-          <div style={this.styles.root}>
-            <GridList style={this.styles.gridList} cols={4}>
-              {this.state &&
-                this.state.characters.map(char => {
-                  return (
-                    <GridTile key={char.id} title={char.name}>
-                      <img
-                        src={char.thumbnail}
-                        alt={`Thumbail of ${char.name}`}
-                      />
-                    </GridTile>
-                  );
-                })}
-            </GridList>
-          </div>
+          {this.state && this.state.characters &&
+            <Grid characters={this.state.characters} />
+          }
           <Footer />
         </div>
       </MuiThemeProvider>
