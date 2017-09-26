@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import AppBar from "material-ui/AppBar";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
-import Footer from './components/Footer.js'
-import Grid from './components/Grid.js'
+import Footer from "./components/Footer.js";
+import Grid from "./components/Grid.js";
 import utils from "./utils.js";
 
 class App extends Component {
@@ -34,9 +34,10 @@ class App extends Component {
       <MuiThemeProvider>
         <div className="App">
           <AppBar title="Marvel App" />
-          {this.state && this.state.characters &&
-            <Grid characters={this.state.characters} />
-          }
+          {this.state &&
+            this.state.characters && (
+              <Grid characters={this.state.characters} />
+            )}
           <Footer />
         </div>
       </MuiThemeProvider>
