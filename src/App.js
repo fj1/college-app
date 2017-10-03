@@ -8,7 +8,7 @@ import utils from "./utils.js";
 
 class App extends Component {
   componentDidMount = async () => {
-    const characterURL = `http://gateway.marvel.com/v1/public/characters`;
+    const characterURL = `https://gateway.marvel.com/v1/public/characters`;
     const timestamp = Date.now();
     const publicKey = utils.getPublicKey();
     const hash = utils.generateHash(timestamp);
