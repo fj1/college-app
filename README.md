@@ -1,7 +1,7 @@
 ## Intro
 This app is designed to introduce college students to frontend development. The goal is to generate excitement and interest by building an app quickly and efficiently.
 
-[Demo](https://peaceful-island-10583.herokuapp.com)
+[App Demo on Heroku](https://peaceful-island-10583.herokuapp.com)
 
 ## Tools:
 * [Create React App](https://github.com/facebookincubator/create-react-app)

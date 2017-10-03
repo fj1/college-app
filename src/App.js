@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import AppBar from "material-ui/AppBar";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import Footer from "./components/Footer.js";
 import Grid from "./components/Grid.js";
@@ -31,7 +33,7 @@ class App extends Component {
 
   render() {
     return (
-      <MuiThemeProvider>
+      <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <div className="App">
           <AppBar title="Marvel App" />
           {this.state &&
