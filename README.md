@@ -10,6 +10,25 @@ This app is designed to introduce college students to frontend development. The 
 * [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
 * [prettier.js](https://github.com/prettier/prettier)
 
+## How do I get this code?
+There are a few options for accessing this code so that you can use it. We'll start with the least difficult option.
+
+1. Download the zip file
+  * At https://github.com/fj1/college-app look to the right for a button called "Download Zip".
+  * Click this button, and save to a convenient location on your computer.
+    * Mac: click on the downloaded zip to install.
+    * Windows: right-click and WinZip to install.
+
+2. Command Line + Git
+  * If you have some knowledge of Command Line and have Git installed, you can follow these steps:
+	  * cd to a desired folder
+    * git clone https://github.com/fj1/college-app.git
+
+3. Using your command line
+    * cd to college-app-master
+    * run `npm install`
+    * run `npm start`
+
 ## Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
